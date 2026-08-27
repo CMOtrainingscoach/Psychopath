@@ -1,14 +1,11 @@
 import Link from "next/link";
-import { redirect } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
 
-export default async function Home() {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-  if (user) redirect("/learn");
-
+/**
+ * Landing is static-friendly — no Supabase on the critical path so a
+ * misconfigured server env cannot 500/404 the marketing page.
+ * Signed-in users are routed from /login and /learn layouts instead.
+ */
+export default function Home() {
   return (
     <main className="mx-auto flex min-h-full w-full max-w-md flex-col px-5 py-16">
       <div className="flex flex-1 flex-col items-center justify-center text-center">

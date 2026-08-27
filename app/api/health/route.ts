@@ -1,41 +1,49 @@
 import { NextResponse } from "next/server";
-import { createAdminClient } from "@/lib/supabase/admin";
+
+export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const configured = Boolean(
-    process.env.NEXT_PUBLIC_SUPABASE_URL &&
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY &&
-      process.env.SUPABASE_SERVICE_ROLE_KEY,
-  );
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
+  const anon = Boolean(process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+  const service = Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY);
+
+  const configured = Boolean(url && anon && service);
+  let supabase = false;
+  let reason: string | undefined;
 
   if (!configured) {
-    return NextResponse.json({ ok: false, supabase: false, reason: "missing_env" });
-  }
-
-  try {
-    const supabase = createAdminClient();
-    const { error } = await supabase.from("profiles").select("id").limit(1);
-
-    // Before Phase 1 migrations, the profiles table may not exist yet.
-    // A successful HTTP round-trip still proves credentials + connectivity.
-    if (error && error.code !== "PGRST116" && error.code !== "42P01") {
-      // PGRST116 = no rows; 42P01 / PostgREST schema miss often surfaces as other codes
-      const missingRelation =
-        error.message?.toLowerCase().includes("does not exist") ||
-        error.code === "PGRST205";
-
-      if (!missingRelation) {
-        return NextResponse.json({
-          ok: true,
-          supabase: false,
-          reason: error.message,
-        });
+    reason = "missing_env";
+  } else {
+    try {
+      const { createClient } = await import("@supabase/supabase-js");
+      const client = createClient(url, process.env.SUPABASE_SERVICE_ROLE_KEY!, {
+        auth: { persistSession: false, autoRefreshToken: false },
+      });
+      const { error } = await client.from("profiles").select("id").limit(1);
+      if (error) {
+        const missing =
+          error.message?.toLowerCase().includes("does not exist") ||
+          error.code === "PGRST205" ||
+          error.code === "42P01";
+        supabase = missing;
+        if (!missing) reason = error.message;
+        else supabase = true;
+      } else {
+        supabase = true;
       }
+    } catch (err) {
+      reason = err instanceof Error ? err.message : "unknown_error";
     }
-
-    return NextResponse.json({ ok: true, supabase: true });
-  } catch (err) {
-    const message = err instanceof Error ? err.message : "unknown_error";
-    return NextResponse.json({ ok: false, supabase: false, reason: message });
   }
+
+  return NextResponse.json({
+    ok: true,
+    configured,
+    supabase,
+    reason,
+    appUrl: process.env.NEXT_PUBLIC_APP_URL ?? null,
+    hasUrl: Boolean(url),
+    hasAnon: anon,
+    hasService: service,
+  });
 }
