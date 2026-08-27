@@ -1,0 +1,2640 @@
+{
+  "generated_from": "reference/PsychPath.jsx",
+  "professors": [
+    {
+      "legacy_key": "wundt",
+      "name": "Wilhelm Wundt",
+      "tagline": "Father of experimental psychology",
+      "bio": "Wilhelm Wundt — Father of experimental psychology.",
+      "avatar_config": {
+        "bg": "#e9e3ff",
+        "hair": "sides",
+        "hairColor": "#5b5563",
+        "beard": true,
+        "mustache": true,
+        "glasses": true
+      },
+      "voice_prompt": "You are Wilhelm Wundt, known for Father of experimental psychology. Explain psychology clearly, warmly, and with memorable examples. Keep sentences short. Encourage the learner.",
+      "sample_phrases": [
+        "Let's look at this together — father of experimental psychology has a lot to teach us.",
+        "Nice work. Ready for the next idea?",
+        "Take a breath — this concept clicks with a good example."
+      ]
+    },
+    {
+      "legacy_key": "pavlov",
+      "name": "Ivan Pavlov",
+      "tagline": "Classical conditioning",
+      "bio": "Ivan Pavlov — Classical conditioning.",
+      "avatar_config": {
+        "bg": "#d6f5f0",
+        "hair": "bald",
+        "hairColor": "#e7e7ea",
+        "beard": true,
+        "mustache": true
+      },
+      "voice_prompt": "You are Ivan Pavlov, known for Classical conditioning. Explain psychology clearly, warmly, and with memorable examples. Keep sentences short. Encourage the learner.",
+      "sample_phrases": [
+        "Let's look at this together — classical conditioning has a lot to teach us.",
+        "Nice work. Ready for the next idea?",
+        "Take a breath — this concept clicks with a good example."
+      ]
+    },
+    {
+      "legacy_key": "skinner",
+      "name": "B. F. Skinner",
+      "tagline": "Operant conditioning",
+      "bio": "B. F. Skinner — Operant conditioning.",
+      "avatar_config": {
+        "bg": "#d6f5f0",
+        "hair": "short",
+        "hairColor": "#8a8f98",
+        "glasses": true
+      },
+      "voice_prompt": "You are B. F. Skinner, known for Operant conditioning. Explain psychology clearly, warmly, and with memorable examples. Keep sentences short. Encourage the learner.",
+      "sample_phrases": [
+        "Let's look at this together — operant conditioning has a lot to teach us.",
+        "Nice work. Ready for the next idea?",
+        "Take a breath — this concept clicks with a good example."
+      ]
+    },
+    {
+      "legacy_key": "bandura",
+      "name": "Albert Bandura",
+      "tagline": "Observational learning",
+      "bio": "Albert Bandura — Observational learning.",
+      "avatar_config": {
+        "bg": "#d6f5f0",
+        "hair": "short",
+        "hairColor": "#9aa0a8",
+        "glasses": true
+      },
+      "voice_prompt": "You are Albert Bandura, known for Observational learning. Explain psychology clearly, warmly, and with memorable examples. Keep sentences short. Encourage the learner.",
+      "sample_phrases": [
+        "Let's look at this together — observational learning has a lot to teach us.",
+        "Nice work. Ready for the next idea?",
+        "Take a breath — this concept clicks with a good example."
+      ]
+    },
+    {
+      "legacy_key": "loftus",
+      "name": "Elizabeth Loftus",
+      "tagline": "Memory & eyewitness",
+      "bio": "Elizabeth Loftus — Memory & eyewitness.",
+      "avatar_config": {
+        "bg": "#ffedd0",
+        "hair": "long",
+        "hairColor": "#7a5233",
+        "glasses": true
+      },
+      "voice_prompt": "You are Elizabeth Loftus, known for Memory & eyewitness. Explain psychology clearly, warmly, and with memorable examples. Keep sentences short. Encourage the learner.",
+      "sample_phrases": [
+        "Let's look at this together — memory & eyewitness has a lot to teach us.",
+        "Nice work. Ready for the next idea?",
+        "Take a breath — this concept clicks with a good example."
+      ]
+    },
+    {
+      "legacy_key": "piaget",
+      "name": "Jean Piaget",
+      "tagline": "Cognitive development",
+      "bio": "Jean Piaget — Cognitive development.",
+      "avatar_config": {
+        "bg": "#ffe0ef",
+        "hair": "bald",
+        "hairColor": "#e7e7ea",
+        "glasses": true,
+        "accessory": "bowtie"
+      },
+      "voice_prompt": "You are Jean Piaget, known for Cognitive development. Explain psychology clearly, warmly, and with memorable examples. Keep sentences short. Encourage the learner.",
+      "sample_phrases": [
+        "Let's look at this together — cognitive development has a lot to teach us.",
+        "Nice work. Ready for the next idea?",
+        "Take a breath — this concept clicks with a good example."
+      ]
+    },
+    {
+      "legacy_key": "ainsworth",
+      "name": "Mary Ainsworth",
+      "tagline": "Attachment theory",
+      "bio": "Mary Ainsworth — Attachment theory.",
+      "avatar_config": {
+        "bg": "#ffe0ef",
+        "hair": "curly",
+        "hairColor": "#b9bdc4",
+        "glasses": true
+      },
+      "voice_prompt": "You are Mary Ainsworth, known for Attachment theory. Explain psychology clearly, warmly, and with memorable examples. Keep sentences short. Encourage the learner.",
+      "sample_phrases": [
+        "Let's look at this together — attachment theory has a lot to teach us.",
+        "Nice work. Ready for the next idea?",
+        "Take a breath — this concept clicks with a good example."
+      ]
+    },
+    {
+      "legacy_key": "milgram",
+      "name": "Stanley Milgram",
+      "tagline": "Obedience to authority",
+      "bio": "Stanley Milgram — Obedience to authority.",
+      "avatar_config": {
+        "bg": "#dcecff",
+        "hair": "short",
+        "hairColor": "#3f3a49"
+      },
+      "voice_prompt": "You are Stanley Milgram, known for Obedience to authority. Explain psychology clearly, warmly, and with memorable examples. Keep sentences short. Encourage the learner.",
+      "sample_phrases": [
+        "Let's look at this together — obedience to authority has a lot to teach us.",
+        "Nice work. Ready for the next idea?",
+        "Take a breath — this concept clicks with a good example."
+      ]
+    },
+    {
+      "legacy_key": "festinger",
+      "name": "Leon Festinger",
+      "tagline": "Cognitive dissonance",
+      "bio": "Leon Festinger — Cognitive dissonance.",
+      "avatar_config": {
+        "bg": "#dcecff",
+        "hair": "short",
+        "hairColor": "#4b4650",
+        "glasses": true
+      },
+      "voice_prompt": "You are Leon Festinger, known for Cognitive dissonance. Explain psychology clearly, warmly, and with memorable examples. Keep sentences short. Encourage the learner.",
+      "sample_phrases": [
+        "Let's look at this together — cognitive dissonance has a lot to teach us.",
+        "Nice work. Ready for the next idea?",
+        "Take a breath — this concept clicks with a good example."
+      ]
+    },
+    {
+      "legacy_key": "freud",
+      "name": "Sigmund Freud",
+      "tagline": "The unconscious mind",
+      "bio": "Sigmund Freud — The unconscious mind.",
+      "avatar_config": {
+        "bg": "#efe6ff",
+        "hair": "short",
+        "hairColor": "#8a8f98",
+        "beard": true,
+        "mustache": true,
+        "glasses": true,
+        "accessory": "cigar"
+      },
+      "voice_prompt": "You are Sigmund Freud, known for The unconscious mind. Explain psychology clearly, warmly, and with memorable examples. Keep sentences short. Encourage the learner.",
+      "sample_phrases": [
+        "Let's look at this together — the unconscious mind has a lot to teach us.",
+        "Nice work. Ready for the next idea?",
+        "Take a breath — this concept clicks with a good example."
+      ]
+    },
+    {
+      "legacy_key": "maslow",
+      "name": "Abraham Maslow",
+      "tagline": "Humanistic psychology",
+      "bio": "Abraham Maslow — Humanistic psychology.",
+      "avatar_config": {
+        "bg": "#efe6ff",
+        "hair": "short",
+        "hairColor": "#3f3a49",
+        "mustache": true,
+        "glasses": true
+      },
+      "voice_prompt": "You are Abraham Maslow, known for Humanistic psychology. Explain psychology clearly, warmly, and with memorable examples. Keep sentences short. Encourage the learner.",
+      "sample_phrases": [
+        "Let's look at this together — humanistic psychology has a lot to teach us.",
+        "Nice work. Ready for the next idea?",
+        "Take a breath — this concept clicks with a good example."
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "slug": "foundations",
+      "title": "Foundations",
+      "subtitle": "What psychology is & how it works",
+      "description": "What psychology is & how it works",
+      "color": "#6C5CE7",
+      "icon": "🧠",
+      "order_index": 0,
+      "default_professor_key": "wundt",
+      "lessons": [
+        {
+          "legacy_key": "f1",
+          "title": "What Is Psychology?",
+          "order_index": 0,
+          "professor_key": "wundt",
+          "chapters": [
+            {
+              "legacy_key": "f1c1",
+              "title": "The science of mind & behavior",
+              "order_index": 0,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "A definition",
+                  "body": "Psychology is the scientific study of mind and behavior. 'Behavior' is anything an organism does; 'mental processes' are the internal experiences we infer from it."
+                },
+                {
+                  "type": "idea",
+                  "heading": "Why 'scientific' matters",
+                  "body": "Psychology relies on systematic observation and evidence rather than intuition or common sense. Claims are tested, not just asserted."
+                },
+                {
+                  "type": "tip",
+                  "heading": "Four goals",
+                  "body": "Psychologists aim to describe, explain, predict, and (sometimes) change behavior."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Psychology is best defined as the study of…",
+                  "options": [
+                    "Only the unconscious mind",
+                    "Mind and behavior, studied scientifically",
+                    "How to give advice",
+                    "The brain's anatomy alone"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "It covers both behavior and mental processes, using scientific methods.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Which is NOT one of psychology's four goals?",
+                  "options": [
+                    "Describe",
+                    "Predict",
+                    "Explain",
+                    "Sell"
+                  ],
+                  "answer_index": 3,
+                  "explanation": "The four goals are describe, explain, predict, and change.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Relying on 'common sense' instead of evidence is a problem because…",
+                  "options": [
+                    "It is always wrong",
+                    "Intuitions can be biased and untested",
+                    "It is illegal",
+                    "It takes too long"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Intuition feels convincing but is often biased; science tests claims.",
+                  "type": "mcq"
+                }
+              ]
+            },
+            {
+              "legacy_key": "f1c2",
+              "title": "Where psychology came from",
+              "order_index": 1,
+              "cards": [
+                {
+                  "type": "name",
+                  "heading": "Wilhelm Wundt (1879)",
+                  "body": "Opened the first psychology laboratory in Leipzig, Germany — the moment psychology split from philosophy into its own science."
+                },
+                {
+                  "type": "idea",
+                  "heading": "Structuralism",
+                  "body": "Edward Titchener used introspection to break conscious experience into basic 'elements' of sensation and feeling."
+                },
+                {
+                  "type": "idea",
+                  "heading": "Functionalism",
+                  "body": "William James asked what mind is *for* — how consciousness helps us adapt and survive, inspired by Darwin."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Who founded the first psychology lab in 1879?",
+                  "options": [
+                    "Freud",
+                    "James",
+                    "Wundt",
+                    "Skinner"
+                  ],
+                  "answer_index": 2,
+                  "explanation": "Wundt's Leipzig lab marks the birth of psychology as a science.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Introspection was the main method of…",
+                  "options": [
+                    "Functionalism",
+                    "Structuralism",
+                    "Behaviorism",
+                    "Biology"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Structuralists used introspection to find the elements of experience.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Functionalism focused on…",
+                  "options": [
+                    "The purpose of mental processes",
+                    "Brain chemistry",
+                    "Dream symbols",
+                    "Reflexes only"
+                  ],
+                  "answer_index": 0,
+                  "explanation": "James asked what mind is for — how it helps us adapt.",
+                  "type": "mcq"
+                }
+              ]
+            },
+            {
+              "legacy_key": "f1c3",
+              "title": "The seven big perspectives",
+              "order_index": 2,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "One mind, many lenses",
+                  "body": "Modern psychology explains behavior through complementary perspectives — each a different level of analysis."
+                },
+                {
+                  "type": "name",
+                  "heading": "The seven lenses",
+                  "body": "Biological, psychodynamic, behavioral, cognitive, humanistic, evolutionary, and sociocultural."
+                },
+                {
+                  "type": "eg",
+                  "heading": "Example: anxiety",
+                  "body": "Biological blames brain chemistry; behavioral sees learned associations; cognitive points to catastrophic thoughts; sociocultural to context. All can be partly true."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Explaining behavior with brain chemistry uses the ___ perspective.",
+                  "options": [
+                    "Behavioral",
+                    "Biological",
+                    "Humanistic",
+                    "Cognitive"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "The biological perspective focuses on brain, genes, and neurochemistry.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "'People are driven to grow and self-actualize' fits the ___ perspective.",
+                  "options": [
+                    "Humanistic",
+                    "Psychodynamic",
+                    "Evolutionary",
+                    "Behavioral"
+                  ],
+                  "answer_index": 0,
+                  "explanation": "Humanistic psychology emphasizes growth, choice, and potential.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Focusing on how thoughts and memory shape behavior is the ___ view.",
+                  "options": [
+                    "Sociocultural",
+                    "Cognitive",
+                    "Biological",
+                    "Psychodynamic"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "The cognitive perspective studies mental processing.",
+                  "type": "mcq"
+                }
+              ]
+            }
+          ],
+          "checkpoint": [
+            {
+              "prompt": "Psychology became a distinct science when…",
+              "options": [
+                "Freud published his dream book",
+                "Wundt opened his lab in 1879",
+                "Skinner built his box",
+                "James wrote a textbook"
+              ],
+              "answer_index": 1,
+              "explanation": "Wundt's 1879 lab is the standard marker.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Which pairs a thinker with the RIGHT school?",
+              "options": [
+                "James – structuralism",
+                "Titchener – functionalism",
+                "Wundt – experimental psychology",
+                "Skinner – humanism"
+              ],
+              "answer_index": 2,
+              "explanation": "Wundt pioneered experimental psychology.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "The four goals of psychology are describe, explain, predict, and…",
+              "options": [
+                "Judge",
+                "Change",
+                "Diagnose",
+                "Sell"
+              ],
+              "answer_index": 1,
+              "explanation": "Describe, explain, predict, change.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Which perspective would emphasize unconscious conflict?",
+              "options": [
+                "Behavioral",
+                "Psychodynamic",
+                "Cognitive",
+                "Biological"
+              ],
+              "answer_index": 1,
+              "explanation": "The psychodynamic view stresses unconscious drives and conflict.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "The best reason psychology insists on evidence is that…",
+              "options": [
+                "Scientists distrust people",
+                "Intuition is often biased and untested",
+                "It sounds impressive",
+                "Laws require it"
+              ],
+              "answer_index": 1,
+              "explanation": "Systematic evidence corrects our biased intuitions.",
+              "type": "mcq"
+            }
+          ]
+        },
+        {
+          "legacy_key": "f2",
+          "title": "Thinking Like a Scientist",
+          "order_index": 1,
+          "professor_key": "wundt",
+          "chapters": [
+            {
+              "legacy_key": "f2c1",
+              "title": "The scientific method",
+              "order_index": 0,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "The loop",
+                  "body": "Ask a question → form a testable hypothesis → operationally define your variables → collect data → analyze → revise theory. Then repeat."
+                },
+                {
+                  "type": "name",
+                  "heading": "Operational definition",
+                  "body": "Spelling out exactly how you'll measure a concept. 'Stress' becomes, say, 'heart rate above 100 bpm during a timed task.'"
+                },
+                {
+                  "type": "tip",
+                  "heading": "Falsifiability",
+                  "body": "A good hypothesis must be able to be proven wrong. If no evidence could ever contradict it, it isn't scientific."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "An operational definition…",
+                  "options": [
+                    "States a theory's goal",
+                    "Specifies exactly how a variable is measured",
+                    "Is the study's conclusion",
+                    "Describes the sample"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "It turns a fuzzy concept into something measurable.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "A scientific hypothesis must be…",
+                  "options": [
+                    "Popular",
+                    "Falsifiable",
+                    "Complicated",
+                    "Proven first"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "It must be capable of being shown false.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "The scientific method is best described as…",
+                  "options": [
+                    "A one-time proof",
+                    "A self-correcting cycle",
+                    "Pure logic without data",
+                    "Expert opinion"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "It loops: test, revise, retest.",
+                  "type": "mcq"
+                }
+              ]
+            },
+            {
+              "legacy_key": "f2c2",
+              "title": "Research designs",
+              "order_index": 1,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "Experiments",
+                  "body": "Manipulate an independent variable (IV) and measure a dependent variable (DV), holding other things constant. Only experiments can show cause and effect."
+                },
+                {
+                  "type": "name",
+                  "heading": "Control & random assignment",
+                  "body": "A control group provides a baseline. Randomly assigning people to groups spreads out differences so the groups start equivalent."
+                },
+                {
+                  "type": "idea",
+                  "heading": "Correlation ≠ causation",
+                  "body": "Correlational studies measure how variables relate without manipulation. A relationship can't tell you which caused which — or if a third variable did."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "The variable the experimenter manipulates is the…",
+                  "options": [
+                    "Dependent variable",
+                    "Independent variable",
+                    "Confound",
+                    "Control"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "The IV is manipulated; the DV is measured.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Only ___ studies can establish cause and effect.",
+                  "options": [
+                    "Correlational",
+                    "Experimental",
+                    "Case",
+                    "Survey"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Manipulation + control is what licenses causal claims.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Ice-cream sales and drownings both rise in summer. This shows…",
+                  "options": [
+                    "Ice cream causes drowning",
+                    "A third variable (heat) at work",
+                    "Drowning causes cravings",
+                    "Nothing"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "A classic third-variable/confound problem.",
+                  "type": "mcq"
+                }
+              ]
+            },
+            {
+              "legacy_key": "f2c3",
+              "title": "Research ethics",
+              "order_index": 2,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "Protecting participants",
+                  "body": "Core rules: informed consent, the right to withdraw, protection from harm, confidentiality, and debriefing afterward."
+                },
+                {
+                  "type": "name",
+                  "heading": "The IRB",
+                  "body": "An ethics board reviews studies before they run to weigh risks against benefits. Deception is allowed only when justified and followed by debriefing."
+                },
+                {
+                  "type": "tip",
+                  "heading": "Why it exists",
+                  "body": "Historical studies that harmed participants led to today's strict codes — ethics is not optional paperwork."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Telling participants what they experienced afterward is called…",
+                  "options": [
+                    "Consent",
+                    "Debriefing",
+                    "Sampling",
+                    "Coding"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Debriefing happens after the study, especially if deception was used.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Which is a core ethical requirement?",
+                  "options": [
+                    "Guaranteed positive results",
+                    "Informed consent",
+                    "Paying everyone equally",
+                    "Publishing fast"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Consent is foundational.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "An IRB's job is to…",
+                  "options": [
+                    "Fund studies",
+                    "Review studies for ethics before they run",
+                    "Analyze the data",
+                    "Recruit participants"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "It weighs risks vs. benefits in advance.",
+                  "type": "mcq"
+                }
+              ]
+            }
+          ],
+          "checkpoint": [
+            {
+              "prompt": "You measure reaction time as your ___ variable.",
+              "options": [
+                "Independent",
+                "Dependent",
+                "Confounding",
+                "Control"
+              ],
+              "answer_index": 1,
+              "explanation": "The measured outcome is the DV.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Random assignment matters because it…",
+              "options": [
+                "Makes groups start out equivalent",
+                "Guarantees big effects",
+                "Removes the need for a control group",
+                "Is required by law"
+              ],
+              "answer_index": 0,
+              "explanation": "It balances unknown differences across groups.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "A correlation of −0.8 means…",
+              "options": [
+                "No relationship",
+                "A strong inverse relationship",
+                "Causation",
+                "A weak positive link"
+              ],
+              "answer_index": 1,
+              "explanation": "Sign = direction, magnitude = strength; −0.8 is strong and inverse.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Deception in a study is acceptable only if…",
+              "options": [
+                "It saves money",
+                "It is justified and followed by debriefing",
+                "Participants never find out",
+                "The results are important"
+              ],
+              "answer_index": 1,
+              "explanation": "Justification plus debriefing is required.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "A testable claim that no evidence could ever contradict is…",
+              "options": [
+                "Strong science",
+                "Not falsifiable, so not scientific",
+                "A control",
+                "A hypothesis"
+              ],
+              "answer_index": 1,
+              "explanation": "Falsifiability is essential.",
+              "type": "mcq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "learning",
+      "title": "Learning & Behavior",
+      "subtitle": "How experience changes us",
+      "description": "How experience changes us",
+      "color": "#12B3A6",
+      "icon": "🔔",
+      "order_index": 1,
+      "default_professor_key": "pavlov",
+      "lessons": [
+        {
+          "legacy_key": "l1",
+          "title": "Classical Conditioning",
+          "order_index": 0,
+          "professor_key": "pavlov",
+          "chapters": [
+            {
+              "legacy_key": "l1c1",
+              "title": "Pavlov's dogs",
+              "order_index": 0,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "Learning by association",
+                  "body": "A neutral stimulus becomes able to trigger a reflex after being paired with something that already triggers it."
+                },
+                {
+                  "type": "name",
+                  "heading": "The four terms",
+                  "body": "Food (UCS) → salivation (UCR). Pair a bell (neutral) with food; the bell becomes a CS that triggers salivation (CR)."
+                },
+                {
+                  "type": "tip",
+                  "heading": "Reflex, not choice",
+                  "body": "Classical conditioning works on automatic, involuntary responses — salivation, fear, nausea — not deliberate actions."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Before conditioning, the bell is a…",
+                  "options": [
+                    "UCS",
+                    "Neutral stimulus",
+                    "CR",
+                    "CS"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "It's neutral until paired with the UCS.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Salivation to food (before any learning) is the…",
+                  "options": [
+                    "CR",
+                    "UCR",
+                    "CS",
+                    "UCS"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "It's the unconditioned, automatic response.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "After conditioning, the bell is the ___ and salivation to it is the ___.",
+                  "options": [
+                    "UCS / UCR",
+                    "CS / CR",
+                    "CR / CS",
+                    "NS / UCR"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "The bell becomes the conditioned stimulus; the response is conditioned.",
+                  "type": "mcq"
+                }
+              ]
+            },
+            {
+              "legacy_key": "l1c2",
+              "title": "Acquisition, extinction & more",
+              "order_index": 1,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "Acquisition & extinction",
+                  "body": "Acquisition is learning the CS–UCS link. Extinction is the fading of the CR when the CS keeps appearing without the UCS."
+                },
+                {
+                  "type": "name",
+                  "heading": "Spontaneous recovery",
+                  "body": "After extinction and a rest, the CR can briefly reappear — showing the association was suppressed, not erased."
+                },
+                {
+                  "type": "idea",
+                  "heading": "Generalization vs discrimination",
+                  "body": "Generalization: similar stimuli trigger the CR. Discrimination: learning to respond only to the specific CS."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "The CR fades when the bell rings with no food. This is…",
+                  "options": [
+                    "Acquisition",
+                    "Extinction",
+                    "Recovery",
+                    "Generalization"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Repeated CS-without-UCS produces extinction.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "A dog fearing all men after one scary man shows…",
+                  "options": [
+                    "Discrimination",
+                    "Generalization",
+                    "Extinction",
+                    "Recovery"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Similar stimuli evoke the response = generalization.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Spontaneous recovery suggests the association was…",
+                  "options": [
+                    "Never formed",
+                    "Suppressed, not erased",
+                    "Only genetic",
+                    "Reversed"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "It re-emerges, so it was suppressed.",
+                  "type": "mcq"
+                }
+              ]
+            }
+          ],
+          "checkpoint": [
+            {
+              "prompt": "Match: UCS is to UCR as CS is to…",
+              "options": [
+                "UCS",
+                "CR",
+                "NS",
+                "IV"
+              ],
+              "answer_index": 1,
+              "explanation": "The conditioned stimulus triggers the conditioned response.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "'Little Albert' learning to fear a white rat is an example of…",
+              "options": [
+                "Operant conditioning",
+                "Classical conditioning",
+                "Modeling",
+                "Extinction"
+              ],
+              "answer_index": 1,
+              "explanation": "A fear reflex was conditioned to a neutral stimulus.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Responding to a buzzer but NOT a similar tone is…",
+              "options": [
+                "Generalization",
+                "Discrimination",
+                "Acquisition",
+                "Recovery"
+              ],
+              "answer_index": 1,
+              "explanation": "Discrimination = responding only to the specific CS.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Classical conditioning best explains learning of…",
+              "options": [
+                "Voluntary skills",
+                "Automatic reflexive responses",
+                "Language grammar",
+                "Math"
+              ],
+              "answer_index": 1,
+              "explanation": "It targets involuntary responses.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "To extinguish a conditioned fear you would…",
+              "options": [
+                "Pair the CS with the UCS more",
+                "Present the CS repeatedly without the UCS",
+                "Change the UCR",
+                "Add a reward"
+              ],
+              "answer_index": 1,
+              "explanation": "CS without UCS weakens the CR.",
+              "type": "mcq"
+            }
+          ]
+        },
+        {
+          "legacy_key": "l2",
+          "title": "Operant Conditioning",
+          "order_index": 1,
+          "professor_key": "skinner",
+          "chapters": [
+            {
+              "legacy_key": "l2c1",
+              "title": "Reinforcement & punishment",
+              "order_index": 0,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "Consequences shape behavior",
+                  "body": "Skinner showed behavior is strengthened or weakened by what follows it. Reinforcement increases behavior; punishment decreases it."
+                },
+                {
+                  "type": "name",
+                  "heading": "Positive vs negative",
+                  "body": "'Positive' = add something; 'negative' = remove something. It's a math sign, not 'good/bad.'"
+                },
+                {
+                  "type": "eg",
+                  "heading": "The 2×2",
+                  "body": "Positive reinforcement: give a treat. Negative reinforcement: stop nagging. Positive punishment: add a fine. Negative punishment: take the phone away."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Taking away a teen's phone to reduce rudeness is…",
+                  "options": [
+                    "Positive reinforcement",
+                    "Negative punishment",
+                    "Negative reinforcement",
+                    "Positive punishment"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Removing something to decrease behavior = negative punishment.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "'Negative reinforcement' means…",
+                  "options": [
+                    "Punishing",
+                    "Removing something unpleasant to increase behavior",
+                    "Ignoring",
+                    "Adding a reward"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Remove an aversive → behavior increases.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Reinforcement always ___ behavior.",
+                  "options": [
+                    "Decreases",
+                    "Increases",
+                    "Deletes",
+                    "Randomizes"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "By definition reinforcement strengthens behavior.",
+                  "type": "mcq"
+                }
+              ]
+            },
+            {
+              "legacy_key": "l2c2",
+              "title": "Schedules of reinforcement",
+              "order_index": 1,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "Ratio vs interval",
+                  "body": "Ratio schedules reward after a number of responses; interval schedules reward after time passes. Each can be fixed or variable."
+                },
+                {
+                  "type": "name",
+                  "heading": "The four schedules",
+                  "body": "Fixed-ratio, variable-ratio, fixed-interval, variable-interval — each produces a distinct pattern of responding."
+                },
+                {
+                  "type": "tip",
+                  "heading": "Why slot machines hook us",
+                  "body": "Variable-ratio schedules (reward after an unpredictable number of responses) produce the highest, most extinction-resistant response rates."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "A slot machine uses a ___ schedule.",
+                  "options": [
+                    "Fixed-interval",
+                    "Variable-ratio",
+                    "Fixed-ratio",
+                    "Variable-interval"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Unpredictable payout per pull = variable-ratio.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Which schedule is MOST resistant to extinction?",
+                  "options": [
+                    "Fixed-ratio",
+                    "Fixed-interval",
+                    "Variable-ratio",
+                    "Variable-interval"
+                  ],
+                  "answer_index": 2,
+                  "explanation": "Variable-ratio produces the most persistent behavior.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "A paycheck every two weeks is a ___ schedule.",
+                  "options": [
+                    "Fixed-interval",
+                    "Variable-ratio",
+                    "Fixed-ratio",
+                    "Variable-interval"
+                  ],
+                  "answer_index": 0,
+                  "explanation": "Reward after a set time = fixed-interval.",
+                  "type": "mcq"
+                }
+              ]
+            }
+          ],
+          "checkpoint": [
+            {
+              "prompt": "Skinner's 'operant' behavior is…",
+              "options": [
+                "Reflexive",
+                "Voluntary and shaped by consequences",
+                "Genetic",
+                "Unconscious"
+              ],
+              "answer_index": 1,
+              "explanation": "Operant conditioning targets voluntary actions.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Adding a chore to reduce lying is…",
+              "options": [
+                "Negative reinforcement",
+                "Positive punishment",
+                "Positive reinforcement",
+                "Extinction"
+              ],
+              "answer_index": 1,
+              "explanation": "Adding an aversive to reduce behavior.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Buckling up to stop the annoying beep is reinforced by…",
+              "options": [
+                "Positive reinforcement",
+                "Negative reinforcement",
+                "Positive punishment",
+                "Nothing"
+              ],
+              "answer_index": 1,
+              "explanation": "Removing the aversive beep strengthens buckling.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Gambling's grip is best explained by…",
+              "options": [
+                "Fixed-interval",
+                "Variable-ratio reinforcement",
+                "Punishment",
+                "Classical conditioning"
+              ],
+              "answer_index": 1,
+              "explanation": "Variable-ratio drives persistent responding.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Compared with classical conditioning, operant conditioning is about…",
+              "options": [
+                "Reflexes",
+                "Consequences of voluntary behavior",
+                "Digestion",
+                "Dreams"
+              ],
+              "answer_index": 1,
+              "explanation": "Consequences shape voluntary behavior.",
+              "type": "mcq"
+            }
+          ]
+        },
+        {
+          "legacy_key": "l3",
+          "title": "Observational Learning",
+          "order_index": 2,
+          "professor_key": "bandura",
+          "chapters": [
+            {
+              "legacy_key": "l3c1",
+              "title": "The Bobo doll & modeling",
+              "order_index": 0,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "We learn by watching",
+                  "body": "Bandura showed children imitate aggression they see modeled by adults — learning without any direct reinforcement of their own."
+                },
+                {
+                  "type": "name",
+                  "heading": "Vicarious reinforcement",
+                  "body": "Seeing a model rewarded (or punished) changes whether we imitate them. We learn from others' consequences."
+                },
+                {
+                  "type": "tip",
+                  "heading": "Four steps",
+                  "body": "Attention → retention → reproduction → motivation. You must notice, remember, be able to do it, and want to."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "The Bobo doll study demonstrated…",
+                  "options": [
+                    "Classical conditioning",
+                    "Learning by observation",
+                    "Extinction",
+                    "Reflexes"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Children imitated modeled aggression.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Copying a model because you saw them rewarded is…",
+                  "options": [
+                    "Direct reinforcement",
+                    "Vicarious reinforcement",
+                    "Punishment",
+                    "Extinction"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Learning from others' consequences.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Which is NOT one of Bandura's four steps?",
+                  "options": [
+                    "Attention",
+                    "Retention",
+                    "Digestion",
+                    "Motivation"
+                  ],
+                  "answer_index": 2,
+                  "explanation": "The four are attention, retention, reproduction, motivation.",
+                  "type": "mcq"
+                }
+              ]
+            }
+          ],
+          "checkpoint": [
+            {
+              "prompt": "Observational learning shows that reinforcement…",
+              "options": [
+                "Must be direct to work",
+                "Can be vicarious",
+                "Is unnecessary always",
+                "Only works on reflexes"
+              ],
+              "answer_index": 1,
+              "explanation": "We can learn from others' outcomes.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "A child copies a sibling praised for sharing. This is…",
+              "options": [
+                "Classical conditioning",
+                "Modeling with vicarious reinforcement",
+                "Punishment",
+                "Generalization"
+              ],
+              "answer_index": 1,
+              "explanation": "Imitation driven by an observed reward.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Bandura's approach is often called…",
+              "options": [
+                "Pure behaviorism",
+                "Social-cognitive theory",
+                "Psychoanalysis",
+                "Structuralism"
+              ],
+              "answer_index": 1,
+              "explanation": "It blends learning with cognition and social context.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "You can 'know' a skill from watching but not perform it if you lack…",
+              "options": [
+                "Attention",
+                "Reproduction ability",
+                "Memory",
+                "A model"
+              ],
+              "answer_index": 1,
+              "explanation": "Reproduction requires the physical/skill capacity.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Observational learning differs from operant conditioning because…",
+              "options": [
+                "It needs no observation",
+                "The learner need not act to learn",
+                "It only uses punishment",
+                "It is reflexive"
+              ],
+              "answer_index": 1,
+              "explanation": "Learning can occur before any behavior is performed.",
+              "type": "mcq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "memory",
+      "title": "Memory & Cognition",
+      "subtitle": "How the mind stores & thinks",
+      "description": "How the mind stores & thinks",
+      "color": "#F0932B",
+      "icon": "💭",
+      "order_index": 2,
+      "default_professor_key": "loftus",
+      "lessons": [
+        {
+          "legacy_key": "m1",
+          "title": "How Memory Works",
+          "order_index": 0,
+          "professor_key": "loftus",
+          "chapters": [
+            {
+              "legacy_key": "m1c1",
+              "title": "The three memory stores",
+              "order_index": 0,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "The multi-store model",
+                  "body": "Information flows through sensory memory → short-term memory → long-term memory. Attention and rehearsal move it along."
+                },
+                {
+                  "type": "name",
+                  "heading": "Capacity & duration",
+                  "body": "Sensory memory: huge but under a second. Short-term: about 7±2 items for ~15–30 seconds. Long-term: effectively unlimited and lasting."
+                },
+                {
+                  "type": "tip",
+                  "heading": "Chunking",
+                  "body": "Grouping items (like a phone number into blocks) beats short-term memory's small capacity by packing more into each 'slot.'"
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Short-term memory holds roughly…",
+                  "options": [
+                    "2 items",
+                    "7±2 items",
+                    "50 items",
+                    "Unlimited"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Miller's 'magical number seven, plus or minus two.'",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Grouping digits to remember them is…",
+                  "options": [
+                    "Encoding failure",
+                    "Chunking",
+                    "Extinction",
+                    "Priming"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Chunking increases effective capacity.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "The correct flow is…",
+                  "options": [
+                    "LTM → STM → sensory",
+                    "Sensory → STM → LTM",
+                    "STM → sensory → LTM",
+                    "Sensory → LTM → STM"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Sensory, then short-term, then long-term.",
+                  "type": "mcq"
+                }
+              ]
+            },
+            {
+              "legacy_key": "m1c2",
+              "title": "Encoding & retrieval",
+              "order_index": 1,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "Three stages",
+                  "body": "Encoding gets information in, storage keeps it, retrieval gets it back out. A 'memory problem' can fail at any stage."
+                },
+                {
+                  "type": "name",
+                  "heading": "Elaborative rehearsal",
+                  "body": "Linking new material to what you already know (meaning) beats mere repetition for building durable long-term memories."
+                },
+                {
+                  "type": "idea",
+                  "heading": "Retrieval cues",
+                  "body": "Memory improves when the context or mood at recall matches the one at learning — context- and state-dependent memory."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Connecting new facts to existing knowledge is…",
+                  "options": [
+                    "Maintenance rehearsal",
+                    "Elaborative rehearsal",
+                    "Chunking",
+                    "Priming"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Elaboration creates richer, more durable memories.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Forgetting where a memory never formed properly is a failure of…",
+                  "options": [
+                    "Encoding",
+                    "Retrieval",
+                    "Storage decay",
+                    "Interference"
+                  ],
+                  "answer_index": 0,
+                  "explanation": "If it never got in, encoding failed.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Recalling better in the room you studied in shows…",
+                  "options": [
+                    "State-dependent memory",
+                    "Context-dependent memory",
+                    "Chunking",
+                    "Rehearsal"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "External context acts as a retrieval cue.",
+                  "type": "mcq"
+                }
+              ]
+            }
+          ],
+          "checkpoint": [
+            {
+              "prompt": "The three memory processes are encoding, storage, and…",
+              "options": [
+                "Chunking",
+                "Retrieval",
+                "Rehearsal",
+                "Priming"
+              ],
+              "answer_index": 1,
+              "explanation": "Encoding, storage, retrieval.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Sensory memory is best described as…",
+              "options": [
+                "Small and permanent",
+                "Huge but very brief",
+                "Unlimited and lasting",
+                "7±2 items"
+              ],
+              "answer_index": 1,
+              "explanation": "Large capacity, sub-second duration.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "For a lasting memory of a concept, best to use…",
+              "options": [
+                "Rote repetition",
+                "Elaborative rehearsal",
+                "Cramming",
+                "Ignoring cues"
+              ],
+              "answer_index": 1,
+              "explanation": "Meaningful linking builds durable memory.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Studying while slightly caffeinated and recalling best while caffeinated is…",
+              "options": [
+                "Context-dependent",
+                "State-dependent",
+                "Encoding failure",
+                "Interference"
+              ],
+              "answer_index": 1,
+              "explanation": "Internal state as a retrieval cue.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "'Tip-of-the-tongue' is mainly a failure of…",
+              "options": [
+                "Encoding",
+                "Storage",
+                "Retrieval",
+                "Attention"
+              ],
+              "answer_index": 2,
+              "explanation": "The memory exists but can't be accessed — retrieval.",
+              "type": "mcq"
+            }
+          ]
+        },
+        {
+          "legacy_key": "m2",
+          "title": "Fallible Memory",
+          "order_index": 1,
+          "professor_key": "loftus",
+          "chapters": [
+            {
+              "legacy_key": "m2c1",
+              "title": "Reconstruction & false memories",
+              "order_index": 0,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "Memory is reconstructive",
+                  "body": "We don't replay recordings — we rebuild memories each time, filling gaps with expectations. That makes memory editable."
+                },
+                {
+                  "type": "name",
+                  "heading": "The misinformation effect",
+                  "body": "Loftus showed that misleading questions after an event can alter what people 'remember' seeing."
+                },
+                {
+                  "type": "eg",
+                  "heading": "The car crash study",
+                  "body": "Asking how fast cars were going when they 'smashed' (vs 'hit') led to higher speed estimates and more false memories of broken glass."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Loftus's work shows memory is…",
+                  "options": [
+                    "A perfect recording",
+                    "Reconstructed and editable",
+                    "Only genetic",
+                    "Always accurate under stress"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "We rebuild memories, so they can be altered.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Misleading post-event questions cause the…",
+                  "options": [
+                    "Priming effect",
+                    "Misinformation effect",
+                    "Chunking effect",
+                    "Recovery effect"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Later information reshapes the memory.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "In the crash study, the verb 'smashed' led people to…",
+                  "options": [
+                    "Recall lower speeds",
+                    "Recall higher speeds and false glass",
+                    "Forget the event",
+                    "Recall perfectly"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Wording biased their reconstructed memory.",
+                  "type": "mcq"
+                }
+              ]
+            }
+          ],
+          "checkpoint": [
+            {
+              "prompt": "The main lesson of Loftus's research is that…",
+              "options": [
+                "Eyewitnesses are infallible",
+                "Memory can be distorted by later information",
+                "Memory is a video",
+                "Only children misremember"
+              ],
+              "answer_index": 1,
+              "explanation": "Memory is malleable and reconstructive.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "A false memory is…",
+              "options": [
+                "A lie",
+                "A confidently held memory of something that didn't happen",
+                "A forgotten fact",
+                "A retrieval cue"
+              ],
+              "answer_index": 1,
+              "explanation": "It feels real but is inaccurate.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Reconstructive memory means we fill gaps with…",
+              "options": [
+                "Random noise",
+                "Expectations and schemas",
+                "Nothing",
+                "New encoding"
+              ],
+              "answer_index": 1,
+              "explanation": "Prior knowledge and expectations fill in gaps.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "This research strongly affects the reliability of…",
+              "options": [
+                "Math tests",
+                "Eyewitness testimony",
+                "Reflexes",
+                "Reaction time"
+              ],
+              "answer_index": 1,
+              "explanation": "Eyewitness accounts can be distorted.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "High confidence in a memory means it is…",
+              "options": [
+                "Definitely accurate",
+                "Not necessarily accurate",
+                "A false memory",
+                "Recently encoded"
+              ],
+              "answer_index": 1,
+              "explanation": "Confidence and accuracy are only loosely linked.",
+              "type": "mcq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "development",
+      "title": "Development",
+      "subtitle": "How we grow across a lifetime",
+      "description": "How we grow across a lifetime",
+      "color": "#E84393",
+      "icon": "🌱",
+      "order_index": 3,
+      "default_professor_key": "piaget",
+      "lessons": [
+        {
+          "legacy_key": "d1",
+          "title": "Piaget's Stages",
+          "order_index": 0,
+          "professor_key": "piaget",
+          "chapters": [
+            {
+              "legacy_key": "d1c1",
+              "title": "Schemas & adaptation",
+              "order_index": 0,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "Building blocks of thought",
+                  "body": "A schema is a mental framework for organizing information. Children build and revise schemas as they explore."
+                },
+                {
+                  "type": "name",
+                  "heading": "Assimilation vs accommodation",
+                  "body": "Assimilation fits new experiences into existing schemas; accommodation changes the schema to fit reality."
+                },
+                {
+                  "type": "eg",
+                  "heading": "The 'doggy' example",
+                  "body": "A toddler calls every four-legged animal 'doggy' (assimilation), then learns cats are different and updates the schema (accommodation)."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "A mental framework for organizing knowledge is a…",
+                  "options": [
+                    "Stage",
+                    "Schema",
+                    "Reflex",
+                    "Cue"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Schemas organize thinking.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Changing a schema to fit new information is…",
+                  "options": [
+                    "Assimilation",
+                    "Accommodation",
+                    "Conservation",
+                    "Egocentrism"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Accommodation updates the schema.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Calling a cat a 'dog' fits new info into an old schema — this is…",
+                  "options": [
+                    "Assimilation",
+                    "Accommodation",
+                    "Discrimination",
+                    "Reversibility"
+                  ],
+                  "answer_index": 0,
+                  "explanation": "The experience is forced into the existing schema.",
+                  "type": "mcq"
+                }
+              ]
+            },
+            {
+              "legacy_key": "d1c2",
+              "title": "The four stages",
+              "order_index": 1,
+              "cards": [
+                {
+                  "type": "name",
+                  "heading": "Sensorimotor (0–2)",
+                  "body": "Infants learn through senses and action; the key milestone is object permanence — knowing things exist when out of sight."
+                },
+                {
+                  "type": "name",
+                  "heading": "Preoperational (2–7)",
+                  "body": "Symbolic thought and language bloom, but children are egocentric and fail conservation (that quantity stays the same despite shape changes)."
+                },
+                {
+                  "type": "name",
+                  "heading": "Concrete & formal",
+                  "body": "Concrete operational (7–11): logical about concrete things, master conservation. Formal operational (12+): abstract and hypothetical reasoning."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Object permanence develops in the ___ stage.",
+                  "options": [
+                    "Preoperational",
+                    "Sensorimotor",
+                    "Concrete",
+                    "Formal"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "It's the hallmark of the sensorimotor stage.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Failing conservation and being egocentric marks the ___ stage.",
+                  "options": [
+                    "Sensorimotor",
+                    "Preoperational",
+                    "Concrete operational",
+                    "Formal operational"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Preoperational children can't yet conserve.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Abstract, hypothetical reasoning appears in the ___ stage.",
+                  "options": [
+                    "Concrete operational",
+                    "Formal operational",
+                    "Preoperational",
+                    "Sensorimotor"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Formal operational thought handles abstraction.",
+                  "type": "mcq"
+                }
+              ]
+            }
+          ],
+          "checkpoint": [
+            {
+              "prompt": "Piaget believed children think…",
+              "options": [
+                "Like small adults",
+                "Qualitatively differently at each stage",
+                "Only via reinforcement",
+                "Only via imitation"
+              ],
+              "answer_index": 1,
+              "explanation": "Each stage is a different kind of thinking.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "A child knows a hidden toy still exists. They have…",
+              "options": [
+                "Conservation",
+                "Object permanence",
+                "Reversibility",
+                "Abstraction"
+              ],
+              "answer_index": 1,
+              "explanation": "Object permanence.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Conservation is typically mastered in the ___ stage.",
+              "options": [
+                "Sensorimotor",
+                "Preoperational",
+                "Concrete operational",
+                "Formal operational"
+              ],
+              "answer_index": 2,
+              "explanation": "Concrete operational children conserve.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Egocentrism in Piaget means…",
+              "options": [
+                "Selfishness",
+                "Difficulty taking another's viewpoint",
+                "High self-esteem",
+                "Aggression"
+              ],
+              "answer_index": 1,
+              "explanation": "It's a cognitive limitation, not a personality flaw.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Updating a schema after surprising evidence is…",
+              "options": [
+                "Assimilation",
+                "Accommodation",
+                "Conservation",
+                "Habituation"
+              ],
+              "answer_index": 1,
+              "explanation": "Accommodation.",
+              "type": "mcq"
+            }
+          ]
+        },
+        {
+          "legacy_key": "d2",
+          "title": "Attachment",
+          "order_index": 1,
+          "professor_key": "ainsworth",
+          "chapters": [
+            {
+              "legacy_key": "d2c1",
+              "title": "Attachment styles",
+              "order_index": 0,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "The bond that shapes us",
+                  "body": "Attachment is the deep emotional bond between infant and caregiver. Bowlby argued it is a survival system with lifelong effects."
+                },
+                {
+                  "type": "name",
+                  "heading": "The Strange Situation",
+                  "body": "Ainsworth watched how babies reacted to separation and reunion with a caregiver to classify attachment styles."
+                },
+                {
+                  "type": "name",
+                  "heading": "Three classic styles",
+                  "body": "Secure (distressed at leaving, comforted at return), insecure-avoidant (indifferent), and insecure-resistant/ambivalent (distressed and hard to soothe)."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Ainsworth's method for measuring attachment is the…",
+                  "options": [
+                    "Bobo doll test",
+                    "Strange Situation",
+                    "Little Albert study",
+                    "Marshmallow test"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "It observes separation and reunion.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "A baby who is comforted quickly on reunion is likely…",
+                  "options": [
+                    "Avoidant",
+                    "Secure",
+                    "Resistant",
+                    "Disorganized"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Secure infants use the caregiver as a safe base.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Attachment theory was pioneered by…",
+                  "options": [
+                    "Skinner",
+                    "Bowlby",
+                    "Freud",
+                    "Wundt"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Bowlby framed attachment as an evolved system; Ainsworth measured it.",
+                  "type": "mcq"
+                }
+              ]
+            }
+          ],
+          "checkpoint": [
+            {
+              "prompt": "Attachment is best described as…",
+              "options": [
+                "A learned habit only",
+                "An emotional bond with survival value",
+                "A reflex",
+                "A personality trait"
+              ],
+              "answer_index": 1,
+              "explanation": "Bowlby saw it as an evolved bonding system.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "In the Strange Situation, the key moments are…",
+              "options": [
+                "Feeding and sleep",
+                "Separation and reunion",
+                "Play alone",
+                "Stranger only"
+              ],
+              "answer_index": 1,
+              "explanation": "Reactions to leaving and returning classify style.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "An infant indifferent to a caregiver leaving and returning is likely…",
+              "options": [
+                "Secure",
+                "Insecure-avoidant",
+                "Insecure-resistant",
+                "None"
+              ],
+              "answer_index": 1,
+              "explanation": "Avoidant infants show little response.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "A 'safe base' allows a securely attached child to…",
+              "options": [
+                "Never explore",
+                "Explore and return for comfort",
+                "Fear strangers forever",
+                "Ignore caregivers"
+              ],
+              "answer_index": 1,
+              "explanation": "Security supports confident exploration.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Attachment research suggests early bonds…",
+              "options": [
+                "Have no later effect",
+                "Can shape later relationships",
+                "Are purely genetic",
+                "Only matter in infancy"
+              ],
+              "answer_index": 1,
+              "explanation": "Early attachment can influence later relating.",
+              "type": "mcq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "social",
+      "title": "Social Psychology",
+      "subtitle": "How others shape us",
+      "description": "How others shape us",
+      "color": "#0984E3",
+      "icon": "👥",
+      "order_index": 4,
+      "default_professor_key": "milgram",
+      "lessons": [
+        {
+          "legacy_key": "s1",
+          "title": "Conformity & Obedience",
+          "order_index": 0,
+          "professor_key": "milgram",
+          "chapters": [
+            {
+              "legacy_key": "s1c1",
+              "title": "Asch & conformity",
+              "order_index": 0,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "The power of the group",
+                  "body": "Conformity is adjusting behavior or opinion to match a group. Asch showed people will deny obvious facts to fit in."
+                },
+                {
+                  "type": "name",
+                  "heading": "The line study",
+                  "body": "Asked to match line lengths, many participants gave answers they could see were wrong — just because confederates did."
+                },
+                {
+                  "type": "name",
+                  "heading": "Two reasons we conform",
+                  "body": "Normative influence (to be liked/accepted) and informational influence (to be right when unsure)."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Asch's line study measured…",
+                  "options": [
+                    "Obedience",
+                    "Conformity",
+                    "Memory",
+                    "Attachment"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Matching a group's obviously wrong answer.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Conforming to be accepted by the group is ___ influence.",
+                  "options": [
+                    "Informational",
+                    "Normative",
+                    "Coercive",
+                    "Vicarious"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Normative influence = wanting to fit in.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Conforming because you assume the group knows better is ___ influence.",
+                  "options": [
+                    "Normative",
+                    "Informational",
+                    "Punitive",
+                    "Genetic"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Informational influence = seeking to be correct.",
+                  "type": "mcq"
+                }
+              ]
+            },
+            {
+              "legacy_key": "s1c2",
+              "title": "Milgram & obedience",
+              "order_index": 1,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "Obedience to authority",
+                  "body": "Milgram tested how far ordinary people would go when an authority figure told them to harm another person."
+                },
+                {
+                  "type": "name",
+                  "heading": "The shock study",
+                  "body": "A majority of participants (about two-thirds) continued to the maximum 'shock' level when urged by the experimenter."
+                },
+                {
+                  "type": "tip",
+                  "heading": "The lesson",
+                  "body": "Situational pressure and legitimate-seeming authority — not evil personalities — drove obedience. Situations shape behavior powerfully."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Milgram studied…",
+                  "options": [
+                    "Conformity to peers",
+                    "Obedience to authority",
+                    "Memory",
+                    "Learning"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Following an authority's harmful orders.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Roughly what fraction went to the maximum shock?",
+                  "options": [
+                    "About one-tenth",
+                    "About one-third",
+                    "About two-thirds",
+                    "Almost none"
+                  ],
+                  "answer_index": 2,
+                  "explanation": "About 65% obeyed to the end.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Milgram's main conclusion was that behavior is powerfully shaped by…",
+                  "options": [
+                    "Genes",
+                    "The situation and authority",
+                    "Intelligence",
+                    "Age"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Situational forces, not just character.",
+                  "type": "mcq"
+                }
+              ]
+            }
+          ],
+          "checkpoint": [
+            {
+              "prompt": "Denying an obvious perceptual fact to match a group is…",
+              "options": [
+                "Obedience",
+                "Conformity",
+                "Dissonance",
+                "Attachment"
+              ],
+              "answer_index": 1,
+              "explanation": "That's Asch-style conformity.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Normative influence is driven by the need to…",
+              "options": [
+                "Be correct",
+                "Be accepted",
+                "Save time",
+                "Obey"
+              ],
+              "answer_index": 1,
+              "explanation": "Fitting in socially.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Milgram's participants mostly obeyed because of…",
+              "options": [
+                "Cruelty",
+                "Legitimate authority and situational pressure",
+                "Low IQ",
+                "Boredom"
+              ],
+              "answer_index": 1,
+              "explanation": "Authority and situation, not personality.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Obedience differs from conformity in that obedience involves…",
+              "options": [
+                "Peers of equal status",
+                "A direct order from an authority",
+                "No social influence",
+                "Only children"
+              ],
+              "answer_index": 1,
+              "explanation": "Obedience follows commands from authority.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "A key ethical concern in Milgram's study was…",
+              "options": [
+                "No consent form typos",
+                "Severe stress to participants",
+                "Too small a sample",
+                "Wrong statistics"
+              ],
+              "answer_index": 1,
+              "explanation": "Participants experienced significant distress.",
+              "type": "mcq"
+            }
+          ]
+        },
+        {
+          "legacy_key": "s2",
+          "title": "Attitudes & Dissonance",
+          "order_index": 1,
+          "professor_key": "festinger",
+          "chapters": [
+            {
+              "legacy_key": "s2c1",
+              "title": "Cognitive dissonance",
+              "order_index": 0,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "The discomfort of contradiction",
+                  "body": "Festinger's cognitive dissonance is the tension we feel when our attitudes and actions clash. We're motivated to reduce it."
+                },
+                {
+                  "type": "name",
+                  "heading": "The $1 vs $20 study",
+                  "body": "People paid just $1 to say a boring task was fun later rated it as MORE fun — they changed their attitude to justify a poorly-paid lie."
+                },
+                {
+                  "type": "tip",
+                  "heading": "How we resolve it",
+                  "body": "We reduce dissonance by changing the attitude, changing the behavior, or adding a justification."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Cognitive dissonance is the tension between…",
+                  "options": [
+                    "Two people",
+                    "Attitudes and behavior that clash",
+                    "Memory and perception",
+                    "Reward and punishment"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Inconsistency between beliefs and actions.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "In the classic study, who liked the boring task MORE?",
+                  "options": [
+                    "Those paid $20",
+                    "Those paid $1",
+                    "Neither",
+                    "A control group"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Small payment gave weak justification, so they changed the attitude.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "One way to reduce dissonance is to…",
+                  "options": [
+                    "Increase the tension",
+                    "Change your attitude to match your action",
+                    "Forget the task",
+                    "Punish yourself"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Aligning attitude with behavior resolves it.",
+                  "type": "mcq"
+                }
+              ]
+            }
+          ],
+          "checkpoint": [
+            {
+              "prompt": "Cognitive dissonance theory was proposed by…",
+              "options": [
+                "Milgram",
+                "Festinger",
+                "Asch",
+                "Skinner"
+              ],
+              "answer_index": 1,
+              "explanation": "Leon Festinger.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Paying someone MORE to lie tends to produce ___ attitude change.",
+              "options": [
+                "More",
+                "Less",
+                "No",
+                "Random"
+              ],
+              "answer_index": 1,
+              "explanation": "Big payment justifies the lie, so less attitude change.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Dissonance is best described as a state of…",
+              "options": [
+                "Physical pain",
+                "Psychological discomfort",
+                "Happiness",
+                "Boredom"
+              ],
+              "answer_index": 1,
+              "explanation": "An uncomfortable motivational tension.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "'I smoke but smoking is bad' can be eased by…",
+              "options": [
+                "Quitting or rationalizing",
+                "Ignoring biology",
+                "Adding a reward",
+                "Conforming"
+              ],
+              "answer_index": 0,
+              "explanation": "Change behavior or add justifications.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Dissonance research shows behavior can change…",
+              "options": [
+                "Only after attitudes change",
+                "Attitudes, not just the reverse",
+                "Nothing",
+                "Only in labs"
+              ],
+              "answer_index": 1,
+              "explanation": "Action can drive attitude change.",
+              "type": "mcq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "personality",
+      "title": "Personality",
+      "subtitle": "What makes each of us us",
+      "description": "What makes each of us us",
+      "color": "#9B59B6",
+      "icon": "🎭",
+      "order_index": 5,
+      "default_professor_key": "freud",
+      "lessons": [
+        {
+          "legacy_key": "p1",
+          "title": "The Unconscious",
+          "order_index": 0,
+          "professor_key": "freud",
+          "chapters": [
+            {
+              "legacy_key": "p1c1",
+              "title": "Id, ego & superego",
+              "order_index": 0,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "A mind in three parts",
+                  "body": "Freud proposed the id (unconscious drives, 'I want it now'), the superego (morals and ideals), and the ego (the realistic mediator)."
+                },
+                {
+                  "type": "name",
+                  "heading": "The pleasure vs reality principle",
+                  "body": "The id runs on the pleasure principle; the ego on the reality principle, delaying gratification to keep us functioning."
+                },
+                {
+                  "type": "tip",
+                  "heading": "Mostly hidden",
+                  "body": "Freud pictured the mind as an iceberg — most mental life is unconscious, influencing us without our awareness."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "The impulsive, pleasure-seeking part is the…",
+                  "options": [
+                    "Ego",
+                    "Superego",
+                    "Id",
+                    "Persona"
+                  ],
+                  "answer_index": 2,
+                  "explanation": "The id demands immediate gratification.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "The realistic mediator between drives and morals is the…",
+                  "options": [
+                    "Id",
+                    "Ego",
+                    "Superego",
+                    "Unconscious"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "The ego balances id and superego with reality.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "The superego represents our…",
+                  "options": [
+                    "Raw drives",
+                    "Moral standards",
+                    "Reflexes",
+                    "Memories"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "The superego is conscience and ideals.",
+                  "type": "mcq"
+                }
+              ]
+            },
+            {
+              "legacy_key": "p1c2",
+              "title": "Defense mechanisms",
+              "order_index": 1,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "Protecting the ego",
+                  "body": "Defense mechanisms are unconscious strategies that reduce anxiety by distorting reality."
+                },
+                {
+                  "type": "name",
+                  "heading": "Common ones",
+                  "body": "Repression (push away), denial (refuse to accept), projection (attribute your feelings to others), displacement (redirect onto a safer target)."
+                },
+                {
+                  "type": "eg",
+                  "heading": "Sublimation",
+                  "body": "Channeling unacceptable impulses into socially valued activity — like turning aggression into competitive sport — is the 'healthiest' defense."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "Accusing others of the hostility you feel is…",
+                  "options": [
+                    "Denial",
+                    "Projection",
+                    "Repression",
+                    "Sublimation"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Projection attributes your feelings to others.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Taking out work anger on your family is…",
+                  "options": [
+                    "Displacement",
+                    "Denial",
+                    "Projection",
+                    "Regression"
+                  ],
+                  "answer_index": 0,
+                  "explanation": "Displacement redirects onto a safer target.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Channeling impulses into valued work or art is…",
+                  "options": [
+                    "Repression",
+                    "Sublimation",
+                    "Denial",
+                    "Projection"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Sublimation transforms impulses constructively.",
+                  "type": "mcq"
+                }
+              ]
+            }
+          ],
+          "checkpoint": [
+            {
+              "prompt": "Freud's iceberg metaphor stresses the power of the…",
+              "options": [
+                "Conscious mind",
+                "Unconscious mind",
+                "Superego only",
+                "Reflexes"
+              ],
+              "answer_index": 1,
+              "explanation": "Most of the mind is hidden.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "A toddler-like tantrum in an adult under stress is…",
+              "options": [
+                "Projection",
+                "Regression",
+                "Sublimation",
+                "Denial"
+              ],
+              "answer_index": 1,
+              "explanation": "Regression = retreating to earlier behavior.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "The ego operates on the ___ principle.",
+              "options": [
+                "Pleasure",
+                "Reality",
+                "Moral",
+                "Genetic"
+              ],
+              "answer_index": 1,
+              "explanation": "Reality principle: realistic, delayed gratification.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Defense mechanisms mainly work to…",
+              "options": [
+                "Improve memory",
+                "Reduce anxiety by distorting reality",
+                "Increase drives",
+                "Teach morals"
+              ],
+              "answer_index": 1,
+              "explanation": "They protect the ego from anxiety.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "A major modern criticism of Freud's theory is that it is…",
+              "options": [
+                "Too mathematical",
+                "Hard to test/falsify",
+                "Too behavioral",
+                "Too simple"
+              ],
+              "answer_index": 1,
+              "explanation": "Many concepts resist scientific testing.",
+              "type": "mcq"
+            }
+          ]
+        },
+        {
+          "legacy_key": "p2",
+          "title": "Humanism & Traits",
+          "order_index": 1,
+          "professor_key": "maslow",
+          "chapters": [
+            {
+              "legacy_key": "p2c1",
+              "title": "Maslow's hierarchy",
+              "order_index": 0,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "A ladder of needs",
+                  "body": "Maslow arranged needs in a pyramid: we generally satisfy lower needs before pursuing higher ones."
+                },
+                {
+                  "type": "name",
+                  "heading": "The five levels",
+                  "body": "Physiological → safety → love/belonging → esteem → self-actualization (reaching your full potential)."
+                },
+                {
+                  "type": "name",
+                  "heading": "Rogers' humanism",
+                  "body": "Carl Rogers stressed unconditional positive regard and congruence between our real self and ideal self as keys to growth."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "The top of Maslow's pyramid is…",
+                  "options": [
+                    "Safety",
+                    "Esteem",
+                    "Self-actualization",
+                    "Belonging"
+                  ],
+                  "answer_index": 2,
+                  "explanation": "Reaching full potential sits at the top.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Food, water, and sleep are ___ needs.",
+                  "options": [
+                    "Esteem",
+                    "Physiological",
+                    "Safety",
+                    "Belonging"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "The base of the pyramid.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Rogers' 'unconditional positive regard' means…",
+                  "options": [
+                    "Rewarding good behavior only",
+                    "Acceptance without conditions",
+                    "Ignoring feelings",
+                    "Strict discipline"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Accepting a person fully, regardless of behavior.",
+                  "type": "mcq"
+                }
+              ]
+            },
+            {
+              "legacy_key": "p2c2",
+              "title": "The Big Five traits",
+              "order_index": 1,
+              "cards": [
+                {
+                  "type": "idea",
+                  "heading": "Traits, measured",
+                  "body": "Modern trait theory describes personality along five broad dimensions, each a spectrum."
+                },
+                {
+                  "type": "name",
+                  "heading": "OCEAN",
+                  "body": "Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism — the most empirically supported model of personality."
+                },
+                {
+                  "type": "tip",
+                  "heading": "Why it matters",
+                  "body": "Unlike Freud's ideas, the Big Five is measurable, reliable, and predictive — a cornerstone of scientific personality psychology."
+                }
+              ],
+              "quiz": [
+                {
+                  "prompt": "The Big Five acronym OCEAN's 'N' stands for…",
+                  "options": [
+                    "Novelty",
+                    "Neuroticism",
+                    "Nurturance",
+                    "Negativity"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Neuroticism = emotional instability vs stability.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "Being organized and dependable reflects high…",
+                  "options": [
+                    "Openness",
+                    "Conscientiousness",
+                    "Extraversion",
+                    "Agreeableness"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "Conscientiousness covers self-discipline and order.",
+                  "type": "mcq"
+                },
+                {
+                  "prompt": "The Big Five is favored by scientists because it is…",
+                  "options": [
+                    "Ancient",
+                    "Measurable and predictive",
+                    "Freudian",
+                    "Untestable"
+                  ],
+                  "answer_index": 1,
+                  "explanation": "It's empirically grounded and reliable.",
+                  "type": "mcq"
+                }
+              ]
+            }
+          ],
+          "checkpoint": [
+            {
+              "prompt": "Humanistic psychology emphasizes…",
+              "options": [
+                "Unconscious conflict",
+                "Growth, choice, and potential",
+                "Reflexes",
+                "Punishment"
+              ],
+              "answer_index": 1,
+              "explanation": "It's an optimistic, growth-focused view.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Which need must generally be met before esteem needs?",
+              "options": [
+                "Self-actualization",
+                "Belonging",
+                "Nothing",
+                "Openness"
+              ],
+              "answer_index": 1,
+              "explanation": "Belonging comes before esteem in the pyramid.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "The five OCEAN traits include all EXCEPT…",
+              "options": [
+                "Openness",
+                "Conscientiousness",
+                "Intelligence",
+                "Agreeableness"
+              ],
+              "answer_index": 2,
+              "explanation": "Intelligence is not one of the Big Five.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Rogers said growth needs the real self and ideal self to be…",
+              "options": [
+                "Opposite",
+                "Congruent",
+                "Ignored",
+                "Punished"
+              ],
+              "answer_index": 1,
+              "explanation": "Congruence supports healthy development.",
+              "type": "mcq"
+            },
+            {
+              "prompt": "Compared with psychodynamic theory, the Big Five is more…",
+              "options": [
+                "Speculative",
+                "Scientifically testable",
+                "Focused on dreams",
+                "About childhood"
+              ],
+              "answer_index": 1,
+              "explanation": "It is measurable and evidence-based.",
+              "type": "mcq"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "professors": 11,
+    "courses": 6,
+    "lessons": 13,
+    "chapters": 24
+  }
+}

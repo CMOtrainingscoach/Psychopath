@@ -1,17 +1,24 @@
 {
-  "name": "web",
+  "name": "psychopath",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 3001",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "start": "next start --port 3001",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "extract-mvp": "node scripts/extract-mvp.mjs",
+    "seed": "npm run extract-mvp && node scripts/seed.mjs",
+    "db:types": "npx supabase gen types typescript --project-id nxihmfjmgnfrrfqvjxkn --schema public > types/database.ts"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.12.5",
+    "@supabase/supabase-js": "^2.112.4",
     "next": "16.3.3",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -20,6 +27,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.3",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.6",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
