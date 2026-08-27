@@ -10,12 +10,14 @@
     "format": "prettier --write .",
     "extract-mvp": "node scripts/extract-mvp.mjs",
     "seed": "npm run extract-mvp && node scripts/seed.mjs",
-    "db:types": "npx supabase gen types typescript --project-id nxihmfjmgnfrrfqvjxkn --schema public > types/database.ts"
+    "db:types": "npx supabase gen types typescript --project-id nxihmfjmgnfrrfqvjxkn --schema public > types/database.ts",
+    "test:ai-parse": "node --experimental-strip-types scripts/test-ai-parse.mts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.5",
     "@supabase/supabase-js": "^2.112.4",
     "next": "16.3.3",
+    "openai": "^7.7.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "zod": "^4.4.3"

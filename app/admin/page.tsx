@@ -68,25 +68,36 @@ export default function AdminDashboard() {
         ))}
       </div>
 
+      <div className="mb-6">
+        <Link
+          href="/admin/generate"
+          className="inline-flex rounded-2xl bg-[var(--pp-brand)] px-4 py-2.5 text-sm font-black text-white"
+        >
+          AI generate
+        </Link>
+      </div>
+
       <section className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-[var(--pp-border)]">
         <h2 className="mb-3 text-lg font-black">Recent AI drafts</h2>
         {stats.recent_drafts.length === 0 ? (
           <p className="text-sm font-semibold text-[var(--pp-muted)]">
-            No generation jobs yet — AI authoring arrives in Phase 4.
+            No generation jobs yet — open AI generate to draft a professor or lesson.
           </p>
         ) : (
           <ul className="space-y-2">
             {stats.recent_drafts.map((d) => (
-              <li
-                key={d.id}
-                className="flex items-center justify-between rounded-xl bg-[#f7f5fc] px-3 py-2 text-sm font-bold"
-              >
-                <span>
-                  {d.type} · {d.status}
-                </span>
-                <span className="text-[var(--pp-muted)]">
-                  {new Date(d.created_at).toLocaleString()}
-                </span>
+              <li key={d.id}>
+                <Link
+                  href={`/admin/generate/${d.id}`}
+                  className="flex items-center justify-between rounded-xl bg-[#f7f5fc] px-3 py-2 text-sm font-bold hover:bg-[var(--pp-brand-soft)]"
+                >
+                  <span>
+                    {d.type} · {d.status}
+                  </span>
+                  <span className="text-[var(--pp-muted)]">
+                    {new Date(d.created_at).toLocaleString()}
+                  </span>
+                </Link>
               </li>
             ))}
           </ul>

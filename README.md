@@ -8,7 +8,7 @@ Gamified, Duolingo-style psychology learning (master's-prep). Built from the MVP
 - Next.js (App Router) + TypeScript + Tailwind
 - Supabase (Postgres, Auth, Storage)
 - Zod validation
-- Anthropic (Phase 4+)
+- OpenAI (Phase 4+)
 
 ## Local setup
 
@@ -80,7 +80,8 @@ npm run db:types
 | `NEXT_PUBLIC_SUPABASE_URL` | Project URL |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Public anon key |
 | `SUPABASE_SERVICE_ROLE_KEY` | Server only — never expose to the client |
-| `ANTHROPIC_API_KEY` | Server only (Phase 4) |
+| `OPENAI_API_KEY` | Server only (Phase 4) |
+| `OPENAI_MODEL` | Optional; default `gpt-5.6-terra` |
 | `NEXT_PUBLIC_APP_URL` | e.g. `http://localhost:3001` |
 
 ## Scripts
@@ -94,6 +95,7 @@ npm run db:types
 | `npm run extract-mvp` | Rebuild curriculum JSON from MVP |
 | `npm run seed` | Extract + seed into Supabase |
 | `npm run db:types` | Regenerate `types/database.ts` |
+| `npm run test:ai-parse` | Zod + JSON extract smoke tests |
 
 ## Phase status
 
@@ -101,7 +103,18 @@ npm run db:types
 - **Phase 1** — schema + seed
 - **Phase 2** — auth + learner app
 - **Phase 3** — admin CMS
-- Phases 4–6 — AI, PWA, deploy
+- **Phase 4** — AI generation (professor + lesson drafts → review → accept)
+- Phases 5–6 — PWA, deploy polish
+
+## AI generation (Phase 4)
+
+1. Set `OPENAI_API_KEY` in `.env.local` and on Vercel (optional `OPENAI_MODEL`).
+2. Open `/admin/generate` (admin only).
+3. Generate a **professor** or **lesson** draft (default model: `gpt-5.6-terra`).
+4. Review/edit JSON, complete the fact-check checklist, **Accept into CMS**.
+5. Publish from the normal course/lesson editors.
+
+Limit: **20 generations per admin per UTC day**. Drafts live in `generation_jobs`.
 
 ## Admin
 
