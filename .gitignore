@@ -39,6 +39,7 @@ yarn-error.log*
 # vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Serwist (generated service worker assets)
+public/sw*
+public/swe-worker*
+

@@ -96,6 +96,7 @@ npm run db:types
 | `npm run seed` | Extract + seed into Supabase |
 | `npm run db:types` | Regenerate `types/database.ts` |
 | `npm run test:ai-parse` | Zod + JSON extract smoke tests |
+| `npm run smoke` | Hit health, manifest, SW on local or prod URL |
 
 ## Phase status
 
@@ -104,7 +105,94 @@ npm run db:types
 - **Phase 2** — auth + learner app
 - **Phase 3** — admin CMS
 - **Phase 4** — AI generation (professor + lesson drafts → review → accept)
-- Phases 5–6 — PWA, deploy polish
+- **Phase 5** — PWA (installable, offline course reading)
+- **Phase 6** — deploy polish
+
+## Deploy (Vercel + Supabase)
+
+**Live app:** [https://psychopath-silk.vercel.app](https://psychopath-silk.vercel.app)
+
+### 1. Vercel project
+
+1. Import the GitHub repo (`CMOtrainingscoach/Psychopath`).
+2. Framework preset: **Next.js** (uses `vercel.json`).
+3. Add environment variables (Production + Preview):
+
+| Variable | Production example |
+|----------|-------------------|
+| `NEXT_PUBLIC_SUPABASE_URL` | `https://nxihmfjmgnfrrfqvjxkn.supabase.co` |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase → Settings → API → anon |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase → Settings → API → service_role |
+| `NEXT_PUBLIC_APP_URL` | `https://psychopath-silk.vercel.app` |
+| `OPENAI_API_KEY` | Optional — required for `/admin/generate` |
+| `OPENAI_MODEL` | Optional — default `gpt-5.6-terra` |
+
+4. **Redeploy** after changing env vars (Deployments → ⋯ → Redeploy).
+
+### 2. Supabase Auth URLs
+
+In [Supabase → Authentication → URL configuration](https://supabase.com/dashboard/project/nxihmfjmgnfrrfqvjxkn/auth/url-configuration):
+
+| Setting | Value |
+|---------|--------|
+| **Site URL** | `https://psychopath-silk.vercel.app` |
+| **Redirect URLs** | `https://psychopath-silk.vercel.app/auth/callback` |
+| | `http://localhost:3001/auth/callback` |
+
+Keep localhost in redirect URLs for local dev. Magic links and OAuth use `/auth/callback`.
+
+### 3. Database
+
+Apply the migration and seed once (see [Database](#database-phase-1) above). Production uses the same Supabase project.
+
+### 4. Promote an admin
+
+After a user signs up, run in the Supabase SQL editor:
+
+```sql
+update public.profiles
+set role = 'admin'
+where id = (
+  select id from auth.users where email = 'you@example.com'
+);
+```
+
+Then open `/admin` while signed in as that user.
+
+### 5. Post-deploy smoke test
+
+```bash
+npm run smoke -- https://psychopath-silk.vercel.app
+```
+
+Or manually:
+
+- `/` — landing page loads
+- `/api/health` — `{ "ok": true, "configured": true, "supabase": true }`
+- `/login` → sign in → `/learn` — learner app
+- `/admin` — admin CMS (admin role only)
+- `/manifest.webmanifest` — PWA manifest
+- `/learn` (while online) — then offline reading works after Phase 5 SW caches data
+
+### 6. Custom domain (optional)
+
+Add the domain in Vercel → Project → Settings → Domains, then update:
+
+- `NEXT_PUBLIC_APP_URL`
+- Supabase Site URL + redirect URLs
+
+Redeploy after env changes.
+
+## PWA (Phase 5)
+
+PsychPath is installable as a standalone app:
+
+- **Manifest** — brand theme `#6c5ce7`, icons 192/512, start URL `/learn`
+- **Service worker** (Serwist) — caches app shell + course API responses for offline reading
+- **Offline** — previously loaded courses stay readable; quiz grading is blocked with a clear message
+- **Install** — use the prompt on the profile screen, or your browser’s “Install app” option
+
+After deploying, open `/learn` once while online so course data is cached. Lighthouse PWA checks should pass on the production URL.
 
 ## AI generation (Phase 4)
 
@@ -127,7 +215,6 @@ update public.profiles set role = 'admin' where id = '<auth-user-uuid>';
 ## Auth notes
 
 - Email/password and magic-link sign-in are supported.
-- In Supabase Dashboard → Authentication → URL configuration, set Site URL to
-  `http://localhost:3001` (or your deploy URL) and add redirect URL
-  `http://localhost:3001/auth/callback`.
+- For **local** dev: Site URL `http://localhost:3001`, redirect `http://localhost:3001/auth/callback`.
+- For **production**: see [Deploy](#deploy-vercel--supabase) for Supabase URL settings.
 - For local testing you can disable **Confirm email** under Authentication → Providers → Email.

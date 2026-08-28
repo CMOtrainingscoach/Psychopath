@@ -3,6 +3,8 @@
 import { useCallback, useEffect, useMemo, useState, type CSSProperties } from "react";
 import { useRouter } from "next/navigation";
 import { Avatar } from "@/components/Avatar";
+import { InstallPrompt } from "@/components/InstallPrompt";
+import { OfflineBanner } from "@/components/OfflineBanner";
 import { PASS_RATIO, levelFromXP } from "@/lib/gamification";
 import { shade } from "@/lib/learner";
 import { createClient } from "@/lib/supabase/client";
@@ -198,6 +200,10 @@ export function PsychPathApp() {
 
   const pick = async (idx: number) => {
     if (!quiz || quiz.revealed) return;
+    if (!navigator.onLine) {
+      flash("You're offline — quiz grading needs a connection.");
+      return;
+    }
     const answers = [...quiz.answers, idx];
     setQuiz({ ...quiz, picked: idx, revealed: false, wrong: false });
 
@@ -340,6 +346,7 @@ export function PsychPathApp() {
 
   return (
     <div style={S.appWrap}>
+      <OfflineBanner />
       <div style={S.hud}>
         <button
           className="pp-chip"
@@ -951,6 +958,10 @@ function ProfileView({
         sub={`${me.profile.display_name} · Master Psychology prep`}
         color="#6C5CE7"
       />
+
+      <div style={{ padding: "0 16px" }}>
+        <InstallPrompt />
+      </div>
 
       <div style={S.levelCard}>
         <div style={{ fontSize: 46 }}>🧠</div>

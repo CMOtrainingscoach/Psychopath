@@ -11,7 +11,8 @@
     "extract-mvp": "node scripts/extract-mvp.mjs",
     "seed": "npm run extract-mvp && node scripts/seed.mjs",
     "db:types": "npx supabase gen types typescript --project-id nxihmfjmgnfrrfqvjxkn --schema public > types/database.ts",
-    "test:ai-parse": "node --experimental-strip-types scripts/test-ai-parse.mts"
+    "test:ai-parse": "node --experimental-strip-types scripts/test-ai-parse.mts",
+    "smoke": "node scripts/smoke.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.5",
@@ -23,14 +24,17 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@serwist/turbopack": "^9.5.12",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "esbuild": "^0.28.2",
     "eslint": "^9",
     "eslint-config-next": "16.3.3",
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.9.6",
+    "serwist": "^9.5.12",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

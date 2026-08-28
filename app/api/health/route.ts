@@ -6,6 +6,8 @@ export async function GET() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
   const anon = Boolean(process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
   const service = Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY);
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? null;
+  const aiConfigured = Boolean(process.env.OPENAI_API_KEY);
 
   const configured = Boolean(url && anon && service);
   let supabase = false;
@@ -36,14 +38,24 @@ export async function GET() {
     }
   }
 
-  return NextResponse.json({
-    ok: true,
-    configured,
-    supabase,
-    reason,
-    appUrl: process.env.NEXT_PUBLIC_APP_URL ?? null,
-    hasUrl: Boolean(url),
-    hasAnon: anon,
-    hasService: service,
-  });
+  const healthy = configured && supabase;
+
+  return NextResponse.json(
+    {
+      ok: healthy,
+      configured,
+      supabase,
+      ai: { configured: aiConfigured },
+      appUrl,
+      env: {
+        hasUrl: Boolean(url),
+        hasAnon: anon,
+        hasService: service,
+        hasAppUrl: Boolean(appUrl),
+      },
+      reason,
+      checkedAt: new Date().toISOString(),
+    },
+    { status: healthy ? 200 : 503 },
+  );
 }
