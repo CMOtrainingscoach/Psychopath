@@ -12,6 +12,8 @@
     "seed": "npm run extract-mvp && node scripts/seed.mjs",
     "db:types": "npx supabase gen types typescript --project-id nxihmfjmgnfrrfqvjxkn --schema public > types/database.ts",
     "test:ai-parse": "node --experimental-strip-types scripts/test-ai-parse.mts",
+    "test:gamification": "node --experimental-strip-types scripts/test-gamification.mts",
+    "test": "npm run test:gamification && npm run test:ai-parse",
     "smoke": "node scripts/smoke.mjs"
   },
   "dependencies": {

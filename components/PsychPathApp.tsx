@@ -5,6 +5,10 @@ import { useRouter } from "next/navigation";
 import { Avatar } from "@/components/Avatar";
 import { InstallPrompt } from "@/components/InstallPrompt";
 import { OfflineBanner } from "@/components/OfflineBanner";
+import {
+  ProfessorChat,
+  type ProfessorChatContext,
+} from "@/components/ProfessorChat";
 import { PASS_RATIO, levelFromXP } from "@/lib/gamification";
 import { shade } from "@/lib/learner";
 import { createClient } from "@/lib/supabase/client";
@@ -67,6 +71,41 @@ function professorCfg(p: Professor | null | undefined): AvatarConfig {
   return (p?.avatar_config ?? {}) as AvatarConfig;
 }
 
+function ProfessorAvatarButton({
+  professor,
+  size,
+  ringColor,
+  onChat,
+}: {
+  professor: Professor | null | undefined;
+  size: number;
+  ringColor?: string;
+  onChat: () => void;
+}) {
+  if (!professor) {
+    return <Avatar cfg={{}} size={size} />;
+  }
+  return (
+    <button
+      type="button"
+      className="pp-press"
+      onClick={onChat}
+      aria-label={`Chat with ${professor.name}`}
+      title={`Chat with ${professor.name}`}
+      style={{
+        border: "none",
+        background: "transparent",
+        padding: 0,
+        borderRadius: "50%",
+        cursor: "pointer",
+        boxShadow: ringColor ? `0 0 0 4px ${ringColor}33` : undefined,
+      }}
+    >
+      <Avatar cfg={professorCfg(professor)} size={size} />
+    </button>
+  );
+}
+
 export function PsychPathApp() {
   const router = useRouter();
   const [loaded, setLoaded] = useState(false);
@@ -87,10 +126,22 @@ export function PsychPathApp() {
   const [quiz, setQuiz] = useState<QuizState | null>(null);
   const [toast, setToast] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [chat, setChat] = useState<{
+    professor: Professor;
+    context: ProfessorChatContext;
+  } | null>(null);
 
   const flash = (msg: string) => {
     setToast(msg);
     setTimeout(() => setToast(null), 2200);
+  };
+
+  const openProfessorChat = (
+    professor: Professor | null | undefined,
+    context: ProfessorChatContext,
+  ) => {
+    if (!professor) return;
+    setChat({ professor, context });
   };
 
   const loadMe = useCallback(async () => {
@@ -440,6 +491,7 @@ export function PsychPathApp() {
             progress={progress}
             onChapter={openChapter}
             onTest={(lesson) => startQuiz(lesson, null, "big")}
+            onProfessorChat={(professor, context) => openProfessorChat(professor, context)}
           />
         )}
         {view === "chapter" && active && (
@@ -449,6 +501,7 @@ export function PsychPathApp() {
             active={active}
             onQuiz={() => startQuiz(active.lesson, active.chapter, "small")}
             onBack={backHome}
+            onProfessorChat={(professor, context) => openProfessorChat(professor, context)}
           />
         )}
         {view === "quiz" && quiz && (
@@ -466,6 +519,7 @@ export function PsychPathApp() {
             quiz={quiz}
             onHome={backHome}
             onRetry={() => startQuiz(quiz.lesson, quiz.chapter, quiz.mode)}
+            onProfessorChat={(professor, context) => openProfessorChat(professor, context)}
           />
         )}
         {view === "profile" && (
@@ -474,6 +528,15 @@ export function PsychPathApp() {
       </div>
 
       {toast && <div style={S.toast}>{toast}</div>}
+
+      {chat && (
+        <ProfessorChat
+          professor={chat.professor}
+          courseColor={course?.color ?? "#6c5ce7"}
+          context={chat.context}
+          onClose={() => setChat(null)}
+        />
+      )}
     </div>
   );
 }
@@ -485,6 +548,7 @@ function HomeMap({
   progress,
   onChapter,
   onTest,
+  onProfessorChat,
 }: {
   course: CourseDetail;
   pathNodes: PathNode[];
@@ -492,6 +556,7 @@ function HomeMap({
   progress: CourseProgress;
   onChapter: (chapter: Chapter, lesson: Lesson) => void;
   onTest: (lesson: Lesson) => void;
+  onProfessorChat: (professor: Professor | null | undefined, context: ProfessorChatContext) => void;
 }) {
   const teacher = course.professor;
 
@@ -511,9 +576,21 @@ function HomeMap({
             {teacher?.name ?? "Professor"}
           </div>
           <div style={{ fontSize: 13, opacity: 0.9 }}>{teacher?.tagline}</div>
+          {teacher && (
+            <div style={{ fontSize: 11, fontWeight: 800, opacity: 0.8, marginTop: 6 }}>
+              Tap avatar to chat
+            </div>
+          )}
         </div>
         <div className="pp-float">
-          <Avatar cfg={professorCfg(teacher)} size={84} />
+          <ProfessorAvatarButton
+            professor={teacher}
+            size={84}
+            ringColor="#fff"
+            onChat={() =>
+              onProfessorChat(teacher, { course_title: course.title })
+            }
+          />
         </div>
       </div>
 
@@ -619,11 +696,13 @@ function ChapterView({
   active,
   onQuiz,
   onBack,
+  onProfessorChat,
 }: {
   course: CourseDetail;
   active: { lesson: Lesson; chapter: Chapter };
   onQuiz: () => void;
   onBack: () => void;
+  onProfessorChat: (professor: Professor | null | undefined, context: ProfessorChatContext) => void;
 }) {
   const { chapter, lesson } = active;
   const teacher = lesson.professor ?? course.professor;
@@ -664,7 +743,18 @@ function ChapterView({
 
       <div style={S.teachRow}>
         <div className="pp-float-s">
-          <Avatar cfg={professorCfg(teacher)} size={64} />
+          <ProfessorAvatarButton
+            professor={teacher}
+            size={64}
+            ringColor={course.color}
+            onChat={() =>
+              onProfessorChat(teacher, {
+                course_title: course.title,
+                lesson_title: lesson.title,
+                chapter_title: chapter.title,
+              })
+            }
+          />
         </div>
         <div style={S.speech}>
           <div
@@ -866,11 +956,13 @@ function ResultView({
   quiz,
   onHome,
   onRetry,
+  onProfessorChat,
 }: {
   course: CourseDetail;
   quiz: QuizState;
   onHome: () => void;
   onRetry: () => void;
+  onProfessorChat: (professor: Professor | null | undefined, context: ProfessorChatContext) => void;
 }) {
   const teacher = quiz.lesson.professor ?? course.professor;
   const total = quiz.total ?? quiz.qs.length;
@@ -902,7 +994,18 @@ function ResultView({
       </div>
 
       <div style={S.teachCard}>
-        <Avatar cfg={professorCfg(teacher)} size={52} />
+        <ProfessorAvatarButton
+          professor={teacher}
+          size={52}
+          ringColor={course.color}
+          onChat={() =>
+            onProfessorChat(teacher, {
+              course_title: course.title,
+              lesson_title: quiz.lesson.title,
+              chapter_title: quiz.chapter?.title,
+            })
+          }
+        />
         <div style={{ fontSize: 14, color: "#5b5470", fontWeight: 700 }}>{line}</div>
       </div>
 

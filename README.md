@@ -96,6 +96,8 @@ npm run db:types
 | `npm run seed` | Extract + seed into Supabase |
 | `npm run db:types` | Regenerate `types/database.ts` |
 | `npm run test:ai-parse` | Zod + JSON extract smoke tests |
+| `npm run test:gamification` | XP / level / streak unit tests |
+| `npm run test` | Run all unit tests |
 | `npm run smoke` | Hit health, manifest, SW on local or prod URL |
 
 ## Phase status
